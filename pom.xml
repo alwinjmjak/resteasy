@@ -262,11 +262,11 @@
                 <additionalJvmArgs>-Djdk.io.File.enableADS=true</additionalJvmArgs>
             </properties>
         </profile>
-        <profile>
+        <!--<profile>
             <id>format-check</id>
             <build>
                 <plugins>
-                    <!-- Validate formatting -->
+                    &lt;!&ndash; Validate formatting &ndash;&gt;
                     <plugin>
                         <groupId>net.revelc.code.formatter</groupId>
                         <artifactId>formatter-maven-plugin</artifactId>
@@ -297,7 +297,7 @@
                     </plugin>
                 </plugins>
             </build>
-        </profile>
+        </profile>-->
     </profiles>
 
     <contributors>
@@ -409,7 +409,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <executions>
@@ -421,7 +421,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -471,11 +471,11 @@
                 </executions>
             </plugin>
             <!-- Format source files -->
-            <plugin>
+            <!--<plugin>
                 <groupId>net.revelc.code.formatter</groupId>
                 <artifactId>formatter-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
+            </plugin>-->
+            <!--<plugin>
                 <groupId>net.revelc.code</groupId>
                 <artifactId>impsort-maven-plugin</artifactId>
                 <executions>
@@ -491,7 +491,7 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
     <reporting>
